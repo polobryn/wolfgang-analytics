@@ -24,8 +24,15 @@ import { DateRange } from 'react-date-range';
 import { useClickOutside } from 'hooks/useClickOutside';
 import { formatDate } from '../Entries/utils';
 import { PipelineFilter } from '../types';
+<<<<<<< HEAD
 
 const enquiryFilters = ['Date Added', 'Date Closed', 'Status'];
+=======
+// import { useDispatch } from 'react-redux';
+// import { addFilter } from '../slice';
+
+const enquiryFilters = ['Date Added', 'Date Closed', 'Status', 'Country'];
+>>>>>>> parent of c05b6d5 (Added country to hooks in dashboard overview)
 
 interface FilterProps {
   isOpen: boolean;

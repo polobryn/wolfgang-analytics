@@ -87,7 +87,6 @@ export const useQueryString = ({
   const dateAdded = filters.find((x) => x.column === 'Date Added');
   const dateClosed = filters.find((x) => x.column === 'Date Closed');
   const status = filters.find((x) => x.column === 'Status');
-  const country = filters.find((x) => x.column === 'Country');
 
   let query = '';
 
@@ -106,10 +105,6 @@ export const useQueryString = ({
 
   if (status) {
     query += `${query.length === 0 ? '?' : '&'}status=${status.value}`;
-  }
-
-  if (country) {
-    query += `${query.length === 0 ? '?' : '&'}status=${country.value}`;
   }
 
   if (comparison) {
