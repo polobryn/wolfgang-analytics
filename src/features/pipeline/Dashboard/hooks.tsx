@@ -107,10 +107,6 @@ export const useQueryString = ({
     query += `${query.length === 0 ? '?' : '&'}status=${status.value}`;
   }
 
-  if (country) {
-    query += `${query.length === 0 ? '?' : '&'}status=${country.value}`;
-  }
-
   if (comparison) {
     query += `${query.length === 0 ? '?' : '&'}compare_to=${format(
       comparison.range1.startDate,
