@@ -40,23 +40,9 @@ export const enquiryColumns = [
     Cell: (props: Cell) => formatDate(props.value),
   },
   { Header: 'Company', accessor: 'company_name' },
-  // {
-  //   Header: 'Project',
-  //   accessor: 'project_name',
-  // },
   {
-    Header: 'Wolfgangers',
-    accessor: 'proposal_leads',
-    Cell: (props: Cell) => {
-      if (Array.isArray(props.value) && !!props.value[0]) {
-        return props.value.map((user: any) => getFirstName(user.username)).join('/');
-      }
-      return (
-        <Badge variantColor="orange" mr="auto">
-          Not Set
-        </Badge>
-      );
-    },
+    Header: 'Project',
+    accessor: 'project_name',
   },
   {
     Header: 'Client Type',
